@@ -12,10 +12,7 @@
 #print(product)
 
 
-#print(product.get('stocks',0))
 
-#del product["price"]
-#print(product)
 
 def discounted(price, discount):
     price = abs(float(price))
@@ -25,8 +22,6 @@ def discounted(price, discount):
         price_witn_discount = price
     else:
         price_witn_discount = price - price*discount/100
-    print(price_witn_discount)    
-
-discounted(100,65)
-discounted(200,-30)
-discounted(-500,200)
+    return price_witn_discount
+    p = discounted(100,65)
+print(p)
